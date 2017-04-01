@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+ 
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<display-name>Register</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.action.Register</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.action.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetCheckCode</servlet-name>
+  	<display-name>GetCheckCode</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.action.GetCheckCode</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetCheckCode</servlet-name>
+  	<url-pattern>/GetCheckCode</url-pattern>
+  </servlet-mapping>
+</web-app>
