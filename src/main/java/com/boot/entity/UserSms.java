@@ -9,6 +9,14 @@ public class UserSms {
 	private String code;
 
 	private Date time;
+	private static UserSms sms;
+	
+	public static  UserSms  getInstance(){
+		if(sms==null){
+			sms = new UserSms();
+		}
+		return sms;
+	}
 
 	public String getPhone() {
 		return phone;

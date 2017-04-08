@@ -31,12 +31,11 @@ public class DaYuService {
 		req.setSmsFreeSignName("爱生活爱龙哥");
 		req.setSmsParamString("{number:'" + code + " '}");
 		req.setRecNum(phone);
-
 		req.setSmsTemplateCode("SMS_60130168");
 		AlibabaAliqinFcSmsNumSendResponse rsp = null;
 		try {
 			rsp = client.execute(req);
-			UserSms userSms = new UserSms();
+			UserSms userSms = UserSms.getInstance();
 			userSms.setPhone(phone);
 			userSms.setCode(code);
 			userSms.setTime(new Date());

@@ -12,6 +12,7 @@ public class RandomUtil {
         if(result.length()!=6){  
             return createRandomVcode();  
         }  
+        System.out.println(result);
         return result; 
 	}
 

@@ -23,6 +23,12 @@
   	<description></description>
   	<servlet-class>com.boot.action.GetCheckCode</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VerifyCheckCode</servlet-name>
+  	<display-name>VerifyCheckCode</display-name>
+  	<description></description>
+  	<servlet-class>com.boot.action.VerifyCheckCode</servlet-class>
+  </servlet>
 
   <servlet-mapping>
   	<servlet-name>Register</servlet-name>
@@ -35,5 +41,9 @@
   <servlet-mapping>
   	<servlet-name>GetCheckCode</servlet-name>
   	<url-pattern>/GetCheckCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VerifyCheckCode</servlet-name>
+  	<url-pattern>/VerifyCheckCode</url-pattern>
   </servlet-mapping>
 </web-app>
