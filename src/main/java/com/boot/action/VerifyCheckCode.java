@@ -48,10 +48,7 @@ public class VerifyCheckCode extends HttpServlet {
 		BaseEntity<User> entity = BaseEntity.getInstence();
 		User bean = User.getInstence();
 		UserSms sms = UserSms.getInstance();
-		System.out.println(sms.getCode());
 		String code = request.getParameter("code");
-		System.out.println(code.toString());
-		
 		if(code.equals(sms.getCode())){
 			bean.setId(0);
 			bean.setUser("");
